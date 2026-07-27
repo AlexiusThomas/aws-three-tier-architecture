@@ -17,6 +17,21 @@ This project demonstrates:
 - Clear technical documentation
 - Repeatable deployment and cleanup procedures
 
+## 💰 Cost Management
+
+This project is designed to be portfolio-friendly while minimizing AWS costs.
+
+The following modules are intentionally disabled by default:
+
+- Application Load Balancer
+- EC2 Compute
+- Auto Scaling
+- Amazon RDS
+
+The networking architecture, Terraform modules, validation workflow, and Infrastructure as Code structure can all be reviewed without deploying billable infrastructure.
+
+To enable production deployment, set the appropriate module variables to `true` and review the Terraform plan before applying.
+
 ## Architecture
 
 Add the architecture diagram here:

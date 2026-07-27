@@ -81,4 +81,4 @@ module "rds" {
   database_security_group_id = module.security.database_security_group_id
 
   enabled = false
-}s
+}
